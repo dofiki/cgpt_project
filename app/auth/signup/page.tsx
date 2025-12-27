@@ -4,13 +4,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import Image from "next/image";
 import Logo from "../../../public/yumm_ai_logo.png";
-import Input from "../../../components/ui/Input";
-import PrimaryBtn from "../../../components/ui/PrimaryBtn";
-import SecondaryBtn from "../../../components/ui/SecondaryBtn";
+import Input from "../components/ui/Input";
+import PrimaryBtn from "../components/ui/PrimaryBtn";
+import SecondaryBtn from "../components/ui/SecondaryBtn";
 import signupSchema from "../../../lib/validations/signupSchema";
 import Link from "next/link";
 
 type SignupFormData = z.infer<typeof signupSchema>;
+
 const Signup = () => {
   const {
     register,

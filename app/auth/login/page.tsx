@@ -4,11 +4,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import Image from "next/image";
 import Logo from "../../../public/yumm_ai_logo.png";
-import Input from "../../../components/ui/Input";
-import PrimaryBtn from "../../../components/ui/PrimaryBtn";
-import SecondaryBtn from "../../../components/ui/SecondaryBtn";
+import Input from "../components/ui/Input";
+import PrimaryBtn from "../components/ui/PrimaryBtn";
+import SecondaryBtn from "../components/ui/SecondaryBtn";
 import loginSchema from "../../../lib/validations/loginSchema";
 import Link from "next/link";
+
 type LoginFormData = z.infer<typeof loginSchema>;
 
 const Login = () => {
